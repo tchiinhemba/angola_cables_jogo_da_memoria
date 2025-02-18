@@ -1,5 +1,5 @@
 import callCenter from "./icons/call_center.svg";
-import nossaSeguros from "./icons/nossalogo.svg";
+import brandLogo from "./icons/brand_logo.svg";
 
 import logo1 from "./icons/1.svg";
 import logo2 from "./icons/2.svg";
@@ -9,7 +9,7 @@ import logo5 from "./icons/5.svg";
 import logo6 from "./icons/6.svg";
 import logo7 from "./icons/7.svg";
 import logo8 from "./icons/8.svg";
-import bai from "./icons/iconBai.svg";
+import backSideCard from "./icons/back_side_card.svg";
 
 export function assets() {
   return {
@@ -24,9 +24,9 @@ export function assets() {
       { src: logo8, matched: false },
     ],
     fallBack: {
-      src: bai
+      src: backSideCard
     },
     callCenter,
-    nossaSeguros,
+    brandLogo,
   };
 }

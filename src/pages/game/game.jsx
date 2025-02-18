@@ -22,7 +22,7 @@ const Game = () => {
     setTimerColor,
   } = useContext(TimerContext);
 
-  const { nossaSeguros, fallBack } = assets();
+  const { brandLogo, fallBack } = assets();
 
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
@@ -96,7 +96,7 @@ const Game = () => {
       <div className="game_container_fl">
         <header className={`header_container_fl`}>
           <div className="header_logo_fl">
-            <img src={nossaSeguros} alt="Nossa Seguros Logo" />
+            <img src={brandLogo} alt="Brand Logo" />
           </div>
         </header>
 
@@ -125,10 +125,10 @@ const Game = () => {
           </div>
         </main>
 
-        <div className="footer_info_fl">TOQUE PARA JOGAR</div>
+        <div className="footer_info_fl"><span>TOQUE PARA JOGAR</span></div>
 
         <button className="btn_accept_ab" onClick={handleClick}>
-          Cancelar
+          <span>Cancelar</span>
         </button>
       </div>
     </div>

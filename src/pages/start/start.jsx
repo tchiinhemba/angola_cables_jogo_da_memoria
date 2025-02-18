@@ -9,21 +9,21 @@ import {
 import { assets } from "../../assets";
 
 const Start = () => {
-  const { callCenter, nossaSeguros } = assets();
+  const { callCenter, brandLogo } = assets();
   const navigate = useNavigate();
 
-  console.log(window.innerWidth)
+  console.log(window.innerWidth);
 
   return (
     <div className="wrapper_h">
       <div className="first_content_h">
         <div className="logo_container_h">
-          <img src={nossaSeguros} alt="Nossa Seguros Logo" />
+          <img src={brandLogo} alt="Brand Logo" />
         </div>
         <div className="text_container_h">
           <p>SEJA BEM-VINDO</p>
           <p>
-            À <span>NOSSA SEGUROS</span>.
+            À <span>ANGOLA CABLES</span>.
           </p>
           <p>VAMOS TESTAR A</p>
           <p>
@@ -39,12 +39,12 @@ const Start = () => {
             handleClick(navigate);
           }}
         >
-          <strong>JOGAR</strong>
+          <span>JOGAR</span>
         </button>
 
         <div className="footer_container_h">
           <div className="image_container_h">
-            <img src={callCenter} alt="Call Center" width="100px" />
+            <img src={callCenter} alt="Call Center" />
           </div>
 
           <div className="phone_h">
@@ -66,7 +66,7 @@ const Start = () => {
                 <BiLogoYoutube />
               </li>
             </ul>
-            <span className="nossa_link_h">www.nossaseguros.ao</span>
+            <span className="brand_link_h">www.angolacables.co.ao</span>
           </div>
         </div>
       </footer>

@@ -7,7 +7,7 @@ import { assets } from "../../assets";
 
 const Lose = () => {
   const { resetState } = useContext(TimerContext);
-  const { nossaSeguros } = assets();
+  const { brandLogo } = assets();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Lose = () => {
     <div className="wrapper_lo">
       <div className="first_content_lo">
         <div className="logo_container_lo">
-          <img src={nossaSeguros} alt="Nossa Seguros Logo" />
+          <img src={brandLogo} alt="Brand Logo" />
         </div>
         <div className="text_container_lo">
           <p>

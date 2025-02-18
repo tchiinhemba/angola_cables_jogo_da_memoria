@@ -17,30 +17,33 @@
 }
 
 
-.logo_container_en {
-    width: 22rem;
+.logo_container_en img {
+    width: $logo-xxl;
 }
 
 .text_container_en {
-    color: $green_main;
-    font-size: $description_4x;
+    color: $aero;
+    font-size: 3rem;
     text-align: center;
 
-    color: $white_main;
+    color: $white;
+
+    p {
+        font-size: $font-title-3xl;
+    }
 }
 
 
 .nossa_link_en {
-    color: $blue_main;
+    color: $royal-blue;
     margin-top: 1rem;
 }
 
 
 
-.btn_accept_en {
-    background-color: $white_main;
-    color: $blue_main;
-    font-size: 4rem;
+.btn_accept_wn {
+    background-color: $white;
+    color: $royal-blue;
     border-radius: .8rem;
     display: flex;
     align-items: center;
@@ -48,10 +51,15 @@
     padding: 2rem;
     border: none;
     cursor: pointer;
+    
+    svg {
+        font-size: $font-btn-xxl;
+
+    }
 }
 
 .description_en {
-    color: $white_main;
+    color: $white;
 
 }
 
@@ -59,7 +67,7 @@
 
 @media (max-width: 1080px) {
 
-    .logo_container_en {
-        width: $logo_4x;
+    .logo_container_en img {
+        width: $logo-xxl;
     }
 }

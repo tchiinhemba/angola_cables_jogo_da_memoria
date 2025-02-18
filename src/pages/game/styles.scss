@@ -24,6 +24,7 @@
 
     position: relative;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -40,30 +41,30 @@
         height: 6rem;
 
         display: block;
-        background-color: $green_main;
+        background-color: $aero;
         padding: .6rem .8rem;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: $white_main;
+        color: $white;
         font-size: 3rem;
     }
 }
 
 
-.header_logo_fl {
-    width: 12rem;
+.header_logo_fl img {
+    width: $logo-xxl;
     margin: auto;
 }
 
-.highligt_fl {
-    color: $green_main;
-    font-size: 2rem;
+.highligt_fl span {
+    color: $aero;
+    font-size: $font-title-xxl;
 }
 
 .footer_info_fl {
-    color: $white_main;
+    color: $white;
 }
 
 
@@ -82,20 +83,24 @@
 
 
     .header_logo_fl {
-        width: 36rem;
+        width: $logo-xxl;
     }
 
     .highligt_fl {
-        font-size: 5rem;
+        font-size: $font-title-xxl;
     }
 
-    .footer_info_fl {
-        font-size: 2rem;
+    .btn_accept_ab {
+        font-size: $font-btn-xxl;
+    }
+
+    .footer_info_fl span {
+        font-size: 4rem;
     }
 
 
     .card {
-        width: 12rem !important;
+        width: 20rem !important;
     }
 
 

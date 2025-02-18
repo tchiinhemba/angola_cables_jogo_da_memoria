@@ -10,7 +10,7 @@ import { assets } from "../../assets";
 
 const Win = () => {
   const { resetState } = useContext(TimerContext);
-  const { nossaSeguros } = assets();
+  const { brandLogo } = assets();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Win = () => {
       <Confetti width={window.innerWidth} height={window.innerHeight} />
       <div className="first_content_en">
         <div className="logo_container_en">
-          <img src={nossaSeguros} alt="Nossa Seguros Logo" />
+          <img src={brandLogo} alt="Brand Logo" />
         </div>
         <div className="text_container_en">
           <p>
@@ -38,7 +38,7 @@ const Win = () => {
         </div>
 
         <Link to="/">
-          <button className="btn_accept_en" onClick={resetState}>
+          <button className="btn_accept_wn" onClick={resetState}>
             <RxReload />
           </button>
         </Link>

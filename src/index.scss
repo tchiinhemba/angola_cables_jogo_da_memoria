@@ -1,14 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
+
+@font-face {
+    font-family: "Gotham";
+    src: url("./assets/font/Gotham-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Gotham Bold";
+    src: url("./assets/font/Gotham-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+  }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Gotham", sans-serif;
     list-style: none;
+
+    font-size: 62.5%;
 }
 
 body {
-    background-color: $blue_main;
+    background-color: $royal-blue;
 }

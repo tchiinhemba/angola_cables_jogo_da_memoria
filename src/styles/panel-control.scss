@@ -4,7 +4,7 @@
     justify-content: center;
     padding: 5px 5px 5px 5px; /*top, right, bottom, left*/
     margin: 0px 0 20px 0;
-    background-color: $blue_main;
+    background-color: $royal-blue;
     border-radius: 10px;
 
   }
@@ -129,8 +129,8 @@
     flex-direction: row;
     padding: 0.2em;
     margin: 0.2em;
-    background-color: $green_main;
-    color: $blue_main;
+    background-color: $aero;
+    color: $royal-blue;
     font-size: 1.2rem;
     font-weight: 700;
   }
@@ -145,7 +145,7 @@
     align-items: center;
     gap: 5px;
   
-    background-color: $green_main;
+    background-color: $aero;
     border-radius: 5px;
   }
   
@@ -157,7 +157,7 @@
     align-items: center;
     gap: 5px;
   
-    background-color: $green_main;
+    background-color: $aero;
     border-radius: 5px;
   }
   
@@ -171,7 +171,7 @@
     align-items: center;
     gap: 5px;
   
-    background-color: $green_main;
+    background-color: $aero;
     border-radius: 5px;
   }
   
@@ -184,8 +184,8 @@
     align-items: center;
     gap: 5px;
   
-    background-color: $green_main;
-    color: $blue_main;
+    background-color: $aero;
+    color: $royal-blue;
     border-radius: 5px;
   }
   
@@ -199,8 +199,8 @@
     align-items: center;
     gap: 5px;
   
-    background-color: $green_main;
-    color: $blue_main;
+    background-color: $aero;
+    color: $royal-blue;
     border-radius: 5px;
   }
   
@@ -212,8 +212,8 @@
     align-items: center;
     gap: 5px;
   
-    background-color: $green_main;
-    color: $blue_main;
+    background-color: $aero;
+    color: $royal-blue;
     border-radius: 5px;
   };
   
@@ -231,10 +231,10 @@
     display: flex;
     align-items: items;
     justify-content: center;
-    background-color: $green_main;
+    background-color: $aero;
     padding: 1rem;
 
-    color: $blue_main;
+    color: $royal-blue;
 
     font-size: 1.6rem;
     font-weight: bold;
@@ -249,5 +249,5 @@
 
   .end_time {
     background-color: red;
-    color: $white_main;
+    color: $white;
   }
