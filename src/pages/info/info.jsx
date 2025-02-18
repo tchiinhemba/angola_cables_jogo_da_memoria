@@ -9,7 +9,7 @@ const Info = () => {
   const navigate = useNavigate();
 
   const { setCards, setTurns, setGameStarted, setSeconds, setTimerColor } = useContext(TimerContext);
-  const { nossaSeguros, iconsGame } = assets();
+  const { brandLogo, iconsGame } = assets();
 
   // Shuffle cards
   const shuffleCards = () => {
@@ -25,7 +25,7 @@ const Info = () => {
     <div className="wrapper_ab">
       <div className="first_content_ab">
         <div className="logo_container_ab">
-          <img src={nossaSeguros} alt="Nossa Seguros Logo" />
+          <img src={brandLogo} alt="Brand Logo" />
         </div>
         <div className="text_container_ab">
           <p>
@@ -42,7 +42,7 @@ const Info = () => {
             handleClick(navigate, shuffleCards, setSeconds, setTimerColor);
           }}
         >
-          <strong>ACEITO O DESAFIO</strong>
+          <span>ACEITO O DESAFIO</span>
         </button>
         <p>
           <span className="description_ab">TOQUE PARA JOGAR</span>

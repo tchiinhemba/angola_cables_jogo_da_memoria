@@ -1,6 +1,6 @@
 .wrapper_h {
   width: 100%;
-  height: 100vh !important;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -9,36 +9,39 @@
 
 .first_content_h {
   display: flex;
+  gap: $mr-xl;
   flex: 1;
 
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  padding: 8rem 2rem;
 }
 
-.logo_container_h {
-  width: 12rem;
+.logo_container_h img {
+  width: $logo-xxl;
 }
 
 .text_container_h {
   margin-top: 4rem;
-  color: $green_main;
-  font-size: 1.8rem;
-  text-align: center;
+  p {
+    font-size: $font-title-3xl;
+    text-align: center;
+    color: $aero;
+  }
 
   span {
-    color: $white_main;
+    font-size: $font-title-3xl;
+    color: $white;
     font-weight: bold;
   }
 }
 
+
+
 footer {
   width: 100%;
-  height: 40%;
-  background-color: $white_main;
-  padding: 3rem;
+  height: 40vh;
+  background-color: $white;
 
   display: flex;
   align-items: center;
@@ -46,24 +49,25 @@ footer {
   position: relative;
 
   .btn_footer_h {
-    font-size: 1.4rem;
-    padding: 1rem 1.4rem;
-    background-color: $green_main;
-    color: $blue_main;
-    border-radius: 2rem;
+    
+    padding: $pd-s $pd-xl;
+    background-color: $aero;
+    color: $royal-blue;
+    border-radius: $bdr-s;
+    z-index: 100;
 
     position: absolute;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
 
-    top: -18%;
+    top: 0;
     left: 50%;
 
     border: none;
     cursor: pointer;
-  }
 
-  .btn_footer_h :focus {
-    background-color: #d65656 !important;
+    span {
+      font-size: $font-btn-xxl;
+    }
   }
 }
 
@@ -71,13 +75,21 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
+}
+
+.image_container_h {
+  width: 30rem;
+  img {
+    width: 100%;
+  }
 }
 
 .phone_h {
+  
   position: relative;
-  background-color: $blue_main;
-  color: $white_main;
+  background-color: $royal-blue;
+  color: $white;
   padding: 0.6rem 1.4rem;
   border-radius: 0.6rem;
 
@@ -85,11 +97,15 @@ footer {
   flex-direction: column;
   overflow: visible;
 
+  span {
+    font-size: 5rem;
+  }
+
   &::after {
     content: "";
-    width: 100px;
+    width: 300px;
     height: 10px;
-    background-color: $green_main;
+    background-color: $aero;
 
     position: absolute;
     right: 50%;
@@ -105,23 +121,28 @@ footer .social_container_h {
   align-items: center;
   ul {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
 
     li {
       display: flex;
       align-items: center;
       justify-content: center;
 
-      padding: 0.3rem;
-      background-color: $blue_main;
+      padding: $pd-xs;
+      background-color: $royal-blue;
       border-radius: 100%;
-      color: $white_main;
+      color: $white;
+
+      svg {
+        font-size: 5rem;
+      }
     }
   }
 }
 
-.nossa_link_h {
-  color: $blue_main;
+.brand_link_h {
+  font-size: $font-title-xl;
+  color: $royal-blue;
   margin-top: 1rem;
 }
 
@@ -184,9 +205,29 @@ footer .social_container_h {
     }
 
     .nossa_link_h {
-      color: $blue_main;
+      color: $royal-blue;
       margin-top: 1rem;
       font-size: 1.2rem;
     }
   }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 820px) {
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 430px) {
+}
+
+@media (max-width: 414px) {
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
 }
