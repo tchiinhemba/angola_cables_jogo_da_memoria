@@ -22,7 +22,7 @@
 }
 
 .text_container_h {
-  margin-top: 4rem;
+  
   p {
     font-size: $font-title-3xl;
     text-align: center;
@@ -36,8 +36,6 @@
   }
 }
 
-
-
 footer {
   width: 100%;
   height: 40vh;
@@ -49,7 +47,6 @@ footer {
   position: relative;
 
   .btn_footer_h {
-    
     padding: $pd-s $pd-xl;
     background-color: $aero;
     color: $royal-blue;
@@ -86,7 +83,6 @@ footer {
 }
 
 .phone_h {
-  
   position: relative;
   background-color: $royal-blue;
   color: $white;
@@ -146,72 +142,6 @@ footer .social_container_h {
   margin-top: 1rem;
 }
 
-@media (min-width: 1440px) {
-  .wrapper_h {
-    flex-direction: row;
-  }
-
-  .first_content_h {
-    padding: 0;
-    gap: 8rem;
-
-    .logo_container_h {
-      width: 16rem;
-    }
-
-    .text_container_h {
-      margin-top: 0;
-      font-size: 2rem;
-    }
-  }
-
-  footer {
-    width: 50%;
-    gap: 2rem;
-    min-height: 100vh;
-    flex-direction: column-reverse;
-
-    .image_container_h img {
-      width: 12rem;
-    }
-
-    .phone_h {
-      font-size: 1.4rem;
-
-      &::after {
-        width: 70%;
-      }
-    }
-
-    .btn_footer_h {
-      font-size: 1.2rem;
-      padding: 0.8rem 3rem;
-      border-radius: 5rem;
-
-      position: inherit;
-      transform: inherit;
-      top: inherit;
-      left: inherit;
-    }
-
-    .social_container_h {
-      ul {
-        gap: 1rem;
-
-        li {
-          font-size: 1.2rem;
-        }
-      }
-    }
-
-    .nossa_link_h {
-      color: $royal-blue;
-      margin-top: 1rem;
-      font-size: 1.2rem;
-    }
-  }
-}
-
 @media (max-width: 1024px) {
 }
 
@@ -227,6 +157,54 @@ footer .social_container_h {
 }
 
 @media (max-width: 375px) {
+
+  .first_content_h {
+    gap: $mr-xl;
+  }
+
+  .logo_container_h img {
+    width: $logo-m;
+  }
+
+  .text_container_h {
+    p,
+    span {
+      font-size: $font-title-m;
+    }
+  }
+
+  footer {
+    .btn_footer_h {
+      padding: $pd-s $pd-m;
+      
+      span {
+        font-size: $font-btn-m;
+      }
+    }
+
+    .footer_container_h {
+      gap: 1rem;
+    }
+
+    .image_container_h {
+      width: 12rem;
+    }
+
+    .social_container_h {
+
+      ul {
+        gap: 1rem;
+
+        li svg {
+          font-size: 2rem;
+        }
+      }
+
+      .brand_link_h {
+        font-size: $font-title-s;
+      }
+    }
+  }
 }
 
 @media (max-width: 320px) {
