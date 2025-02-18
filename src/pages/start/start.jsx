@@ -47,9 +47,9 @@ const Start = () => {
             <img src={callCenter} alt="Call Center" />
           </div>
 
-          <div className="phone_h">
+          {/* <div className="phone_h">
             <span className="">+244 923 190 860</span>
-          </div>
+          </div> */}
 
           <div className="social_container_h">
             <ul>
